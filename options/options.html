@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css" />
+</head>
+
+<body>
+  <h2>Pushover Settings</h2>
+  <p>In order to send links to Pushover you must provide both an application token and a user key. You will need to generate an app token that is unique to this extension in your Pushover.net Admin Panel.</p>
+  <p>The User key can also be found in your admin panel, and is the same user key you use for all other Pushover apps</p>
+  <hr/>
+  <form class="options-form">
+    <div class="field">
+      <label>App Token</label>
+      <input type="text" id="app-token">
+    </div>
+    <div class="field" style="margin-top: 20px;">
+      <label>User Key</label>
+      <input type="text" id="user-key">
+    </div>
+<button type="submit" class="button primary">Save Preferences</button>
+  </form>
+
+  <script src="options.js"></script>
+
+</body>
+</html>

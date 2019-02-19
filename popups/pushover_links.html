@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="pushover_links.css" />
+</head>
+
+<body>
+  <header class="panel-section panel-section-header">
+    <div class="icon-section-header">
+      <img src="/icons/pushover-32.png" alt="Pushover Icon">
+    </div>
+    <div class="text-section-header">Send Link via Pushover</div>
+    <button id="options-page" style="margin-left: auto;">
+      <img src="/icons/gear.png" title="Open Preferences Page" alt="options"
+        width="20px" height="20px">
+    </button>
+  </header>
+  
+  <div id="main-content" class="panel-section panel-section-list">
+    <div id="current-url" class="link-content list-element">
+      Grabbing Url...
+    </div>
+  
+    <div class="panel-section-separator"></div>
+  
+    <div class="device-selection list-element">
+      <label id="device-selection-label" for="devices">Send To:</label>
+      <select id="device-selection" name="devices">
+        <option>All Devices</option>
+      </select>
+    </div>
+  </div> <!-- end of #main-content -->
+
+  <div id="error-content" class="panel-section flex-column hidden">
+    <div class="my-notify-error">
+      An Error Occurred!
+    </div>
+    <button id="error-close" class="button">Dismiss</button>
+  </div> <!-- end of #error-content -->
+
+  <div id="validation-failed" class="panel-section flex-column hidden">
+    <div class="my-notify-warning">
+      Pushover indicates a problem with the User and/or App settings you provided. This is usually a typo in the settings you inputed into this extension's preferences.<br/>
+      Please check the Preferences page and update your settings.
+    </div>
+    <button id="validation-failed-preferences-page" class="button primary">Open Preferences</button>
+  </div> <!-- end of #validation-failed -->
+
+  <div id="message-success" class="panel-section flex-column hidden" style="margin-bottom: 30px; margin-top:20px;">
+    <div class="my-notify-success">
+      Your Link Was Successfully Sent
+    </div>
+    <!-- <button id="success close" class="button primary">Dismiss</button> -->
+  </div> <!-- end of #validation-failed -->
+  
+  <footer id="button-footer" class="panel-section panel-section-footer hidden">
+    <button id="cancel-button" class="button panel-section-footer-button">Nevermind</button>
+    <div class="panel-section-footer-separator"></div>
+    <button id="submit-button" class="button panel-section-footer-button primary">Send Link</button>
+  </footer>
+  <script src="pushover_links.js"></script>
+</body>
+
+</html>

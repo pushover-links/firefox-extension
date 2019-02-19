@@ -1,0 +1,29 @@
+
+.my-notify-info,
+.my-notify-success,
+.my-notify-warning,
+.my-notify-error {
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+}
+
+.my-notify-info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+
+.my-notify-success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+
+.my-notify-warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+
+.my-notify-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+}

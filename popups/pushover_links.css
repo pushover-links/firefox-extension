@@ -1,0 +1,106 @@
+html,
+body {
+  width: 400px;
+}
+br {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.button {
+  margin: 3% auto;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: rgba(12, 12, 13, 0.1);
+  border: none;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+.button:hover {
+  background-color: rgba(12, 12, 13, 0.2)
+}
+
+.button.primary:hover {
+  background-color: #003eaa;
+}
+
+.button.primary {
+  background-color: #0060df;
+  color: white;
+}
+
+.reset {
+  background-color: #FBFBC9;
+}
+
+.reset:hover {
+  background-color: #EAEA9D;
+}
+.panel-section-footer-button {
+  margin: 0 !important;
+}
+
+.panel-section-footer {
+  margin-top: 10px;
+}
+#main-content {
+  margin: 10px 20px;
+}
+.list-element {
+  padding: 10px 0;
+}
+
+#device-selection-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#device-selection {
+  display: block;
+  width: 100%;
+}
+
+.my-notify-info,
+.my-notify-success,
+.my-notify-warning,
+.my-notify-error {
+  padding: 10px;
+  display: block;
+  margin: 10px 15px 0 15px;
+}
+
+.my-notify-info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+
+.my-notify-success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+
+.my-notify-warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+
+.my-notify-error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+#options-page {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  padding: 0;
+}

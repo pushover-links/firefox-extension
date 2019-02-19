@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Pushover Link",
+  "version": "1.0",
+  "description": "Sends links to Pushover app to make it easy to send links across devices",
+  "icons": {
+    "16": "icons/pushover-16.png",
+    "24": "icons/pushover-24.png",
+    "32": "icons/pushover-32.png",
+    "48": "icons/pushover-48.png",
+    "64": "icons/pushover-64.png",
+    "72": "icons/pushover-72.png",
+    "128": "icons/pushover-128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/pushover-logo.png",
+    "default_title": "Pushover Links",
+    "default_popup": "popups/pushover_links.html",
+    "browser_style": true
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://api.pushover.net/*"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "firefox@pushover-links.com"
+    }
+  }
+}
